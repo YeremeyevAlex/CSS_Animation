@@ -1,0 +1,223 @@
+* { box-sizing: border-box; }
+	body { margin: 0; }
+	#banner {
+		position: relative;
+		width: 600px;
+		height: 415px;
+		border: 1px solid #999;
+		overflow: hidden;
+		background: url('../CSS_Animation/img/backg.jpg') no-repeat;
+	}
+	#banner > * { position: absolute; }
+	#banner h1 {
+		text-align: center;
+		top: 40px;
+		left: 10px;
+		color: #d9ff66;
+		font: 3em 'Pacifico', cursive;
+		text-shadow: 0 0 5px #e0e0eb;
+		animation: text1 15s forwards;
+	}
+	#pic2 {
+		position: relative;
+		width: 600px;
+		height: 415px;
+		background: url('../CSS_Animation/img/pic2.jpg') no-repeat;
+		animation: pic2 21s 0s forwards;
+	}
+	#pic2 h2 {
+		position: absolute;
+		text-align: center;
+		color: #b3c4ff;
+		font: 3em 'Piedra', cursive;
+		top: 110px;
+		left: 100px;
+		right: -100%;
+		animation: text2 12s ease-in 8s forwards;
+	}
+	#tel {
+		bottom: -50%;
+		width: 100%;
+		height: 50%;
+		background: url('../CSS_Animation/img/telescope.jpg') bottom/cover no-repeat;
+		animation: tel 2s ease-in-out 20s forwards;
+	}
+	#pic3 {
+		top: -50%;
+		width: 100%;
+		height: 50%;
+		background: url('../CSS_Animation/img/pic3.jpg') center/cover no-repeat;
+		animation: pic3 2s ease-in-out 20s forwards;
+	}
+	#p1 {
+		width: 55px;
+		top: 70px;
+		right: -100px;
+		animation: planets 20s linear 24s 1;
+	}
+	#p2 {
+		width: 30px;
+		top: 30px;
+		right: -100px;
+		animation: planets 17s linear 24s 1;
+	}
+	#p3 {
+		width: 120px;
+		top: 130px;
+		right: -200px;
+		animation: planets 19s linear 24s 1;
+	}
+	#p4 {
+		width: 20px;
+		top: 130px;
+		right: -200px;
+		animation: planets 25s linear 24s 1;
+	}
+	#p5 {
+		width: 38px;
+		top: 70px;
+		right: -200px;
+		animation: planets 15s linear 30s 1;
+	}
+	#p6 {
+		width: 50px;
+		top: 5px;
+		right: -200px;
+		animation: planets 23s linear 24s 1;
+	}
+	#p7 {
+		width: 25px;
+		top: 160px;
+		right: -200px;
+		animation: planets 13s linear 32s 1;
+	}
+	#p8 {
+		width: 110px;
+		top: 60px;
+		right: -200px;
+		animation: planets 20s linear 20s 1;
+	}
+	#tel h3 {
+		position: absolute;
+		top: 10px;
+		left: 280px;
+		right: -750px;
+		color: #b30000;
+		font: 2em 'Faster One', cursive;
+		text-align: center;
+		animation: text3 8s ease-in-out 21s forwards;
+	}
+	#pic4 {
+		bottom: -100%;
+		width: 50%;
+		height: 80%;
+		left: 325px;
+		background: url('../CSS_Animation/img/me.jpg') center/cover no-repeat;
+		animation: pic4 2.5s ease-in-out 48s forwards;
+	}
+	#tel2 {
+		bottom: -100%;
+		width: 55%;
+		height: 80%;
+		background: url('../CSS_Animation/img/telescope2.jpg') center/cover no-repeat;
+		animation: tel2 2.5s ease-in-out 48s forwards;
+	}
+	#contact {
+		top: -100%;
+		width: 100%;
+		height: 20%;
+		background: #4d0000;
+		display: flex;
+		animation: contact 2.5s ease-in-out 48s forwards;
+	}
+	#contact #c1 {
+		position: absolute;
+		left: 0;
+	}
+	#contact h4 {
+		font: 1.7em 'Modak', cursive;
+		color: #00cc00;
+		margin: 25px 0 0 2px;
+	}
+	#contact #c2 {
+		position: absolute;
+		right: 0;
+	}
+	#contact #c2 h5 {
+		margin: 0;
+		padding: 0 0 0 45px;
+		color: #00cc00;
+		font: 1.2em 'Lily Script One', cursive;
+	}
+	#contact #c2 ul li {
+		list-style: none;
+		color: #00cc00;
+		font-family: 'Jim Nightshade', cursive;
+	}
+	#contact #c2 ul {
+		margin: -1px 5px 0 0;
+	}
+	#btn {
+		outline: none;
+		background: #1a75ff;
+		color: #ffff00;
+		border: 2px solid #1a75ff;
+		border-radius: 30px;
+		font: 1.2em 'Lemonada', cursive;
+		box-shadow: 0 0 10px #80ffff;
+		left: -100%;
+		top: 95px;
+		cursor: pointer;
+		animation: btn1 3s ease-in-out 49.5s forwards;
+	}
+	@keyframes text1 {
+		0% { opacity: 0; left: 60px; top: -35px; transform: rotate(-360deg) scale(0,0); }
+		35% {  opacity: 1; left: 0; top: 0; transform: rotate(360deg) scale(1,1); }
+		65% {  opacity: 1; left: 0; top: 0; transform: rotate(360deg) scale(1,1); }
+		100% { opacity: 0; left: 60px; top: -35px; transform: rotate(-360deg) scale(0,0); }
+	}
+	@keyframes pic2 {
+		0% { bottom: -100%; }
+		58% { bottom: -100%; }
+		80% { bottom: 0; }
+		100% { bottom: 0; }
+	}
+	@keyframes text2 {
+		0% { right: -100%; transform: scale(1,1); top: 110px; left: 100px; }
+		40% { right: -100%; transform: scale(1,1); top: 110px; left: 100px; }
+		70% { right: 90px; transform: scale(1,1); top: 110px; left: 100px; }
+		95% { right: 90px; transform: scale(1,1); top: 110px; left: 100px; }
+		100% { opacity: 0; transform: scale(0,0); right: 60px; top: -100px;  }
+	}
+	@keyframes tel {
+		from { bottom: -50%; }
+		to { bottom: 0; }
+	}
+	@keyframes pic3 {
+		from { top: -50%; }
+		to { top: 0; }
+	}
+	@keyframes planets {
+		from { right: -200px; }
+		to { right: 605px; }
+	}
+	@keyframes text3 {
+		from { right: -750px; }
+		to { right: 0; }
+	}
+	@keyframes pic4 {
+		from { bottom: -100%; }
+		to { bottom: 0; }
+			}
+	@keyframes tel2 {
+		from { bottom: -100%; }
+		to { bottom: 0; }
+	}
+	@keyframes contact {
+		from { top: -100%; }
+		to { top: 0; }
+	}
+	@keyframes btn1 {
+		from { left: -100%; }
+		to { left: 215px; }
+	}
